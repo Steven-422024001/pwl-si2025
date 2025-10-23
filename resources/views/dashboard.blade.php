@@ -97,6 +97,8 @@
     <p class="text-muted">Berikut adalah ringkasan aktivitas di Mofu Cafe hari ini.</p>
 </div>
 
+
+
 {{-- KPI Cards --}}
 <div class="row">
     <div class="col-md-6 col-lg-3 mb-4">
@@ -200,6 +202,7 @@
         </div>
     </div>
 </div>
+
 @endsection
 
 @section('scripts')

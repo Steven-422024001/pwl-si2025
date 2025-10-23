@@ -236,6 +236,16 @@
     </div>
 </div>
 
+{{-- Logout Button --}}
+<div style="display: flex; justify-content: flex-end;">
+<form action="{{ route('logout') }}" method="POST">
+    @csrf 
+    <button type="submit" class="btn btn-danger">
+        Logout
+    </button>
+</form>
+</div>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 @yield('scripts')
 
