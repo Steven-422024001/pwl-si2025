@@ -150,7 +150,7 @@ class TransaksiController extends Controller
 
     
   private function kirimEmailTransaksi($to, $id)
-{
+    {      
     $transaksi = TransaksiPenjualan::with('details')->find($id);
 
     if (!$transaksi) {
