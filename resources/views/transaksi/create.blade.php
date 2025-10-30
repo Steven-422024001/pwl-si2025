@@ -61,6 +61,18 @@
                 </div>
                 <hr>
 
+
+                <div class="form-group">
+                <label for="email_pembeli">Email Pembeli</label>
+                <input type="email" 
+                    name="email_pembeli" 
+                    class="form-control" 
+                    id="email_pembeli" 
+                    placeholder="Masukkan email pembeli"
+                    required
+                    value="{{ old('email_pembeli', $transaksi->email_pembeli ?? '') }}">
+            </div>
+
                 {{-- Daftar Item Tagihan --}}
                 <div id="bill-items">
                     <p class="text-center text-muted">Belum ada item dipilih.</p>

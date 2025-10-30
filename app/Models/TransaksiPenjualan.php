@@ -18,6 +18,7 @@ class TransaksiPenjualan extends Model
     protected $fillable = [
         'nama_kasir',
         'nama_pembeli',
+        'email_pembeli',
         'metode_pembayaran',
         'total_harga',
     ];

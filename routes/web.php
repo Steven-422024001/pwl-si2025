@@ -39,6 +39,8 @@ Route::middleware(['auth'])->group(function () {
     Route::resource('products', ProductController::class);
     Route::resource('suppliers', SupplierController::class);
     Route::resource('transaksi', TransaksiController::class);
+    //email
+    Route::get('/send-email/{to}/{id}', [\App\Http\Controllers\TransaksiController::class, 'sendEmail']);
     Route::resource('category', CategoryController::class);
 });
 

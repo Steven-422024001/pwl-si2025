@@ -52,6 +52,19 @@
                     <label for="nama_pembeli" class="form-label small">Nama Pembeli (Opsional)</label>
                     <input type="text" class="form-control" id="nama_pembeli" name="nama_pembeli" value="{{ old('nama_pembeli', $transaksi->nama_pembeli) }}">
                 </div>
+
+                <div class="form-group">
+                <label for="email_pembeli">Email Pembeli</label>
+                <input type="email" 
+                    name="email_pembeli" 
+                    class="form-control" 
+                    id="email_pembeli" 
+                    placeholder="Masukkan email pembeli"
+                    required
+                    value="{{ old('email_pembeli', $transaksi->email_pembeli ?? '') }}">
+            </div>
+
+
                 <hr>
                 <div id="bill-items"></div>
                 <div class="border-top pt-3 mt-3">
