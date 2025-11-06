@@ -26,6 +26,20 @@ class SupplierController extends Controller
         ));
     }
 
+
+    public function lihat()
+    {
+        return Supplier::all();
+    }
+
+    public function lihat_by_id($id)
+    {
+        $supplier = Supplier::find($id);
+        if (!$supplier) return response()->json(['message' => 'Supplier not found'], 404);
+        return $supplier;
+    }
+
+
     /**
      * Menampilkan form untuk membuat supplier baru.
      */
